@@ -2,16 +2,25 @@
 <html>
     <head>
         <title>Example</title>
-        <script type="module" src="c71d9191d42eb343.js"></script>
+        <script type="module" src="c82b5a6b127191df.js"></script>
 
     </head>
     <body>
-        <div>
-            <p>1111111.</p>
-
+        <div id="main_place">
+            <p>main_place</p>
         </div>
+
         <div>
         <p>This is an example of a simple HTML page with one paragraph.</p>
+        <button onclick="show('testClassDynamicHTML')">Replace</button>
+        
+        <script>
+          function show(param_div_id) {
+            document.getElementById('main_place').innerHTML = document.getElementById(param_div_id).innerHTML;
+          }
+        </script>
+
+        
         </div>
         <div>
             <p>222222.</p>
