@@ -8483,6 +8483,8 @@ var startWasiTask = async () => {
   const wasmRunner = WasmRunner(false, runtimeConstructor);
   const wasmBytes = new Uint8Array(responseArrayBuffer).buffer;
   await wasmRunner.run(wasmBytes);
+      show('_tokamak-stack _tokamak-hstack');
+
 };
 function handleError(e) {
   console.error(e);
@@ -8492,7 +8494,6 @@ function handleError(e) {
 }
 try {
   startWasiTask().catch(handleError);
-  show('_tokamak-stack _tokamak-hstack');
 } catch (e) {
   handleError(e);
 }
