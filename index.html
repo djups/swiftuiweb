@@ -9,35 +9,25 @@
         <div id="main_place">
             <p>main_place</p>
         </div>
-
-        <div>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-        <button onclick="show('_tokamak-stack _tokamak-hstack')">Replace to operation 3</button>
-        <script>
-            
-          function show(param_div_id) {
-            
-            
-            const main = document.getElementById('main_place');
-            const original = document.getElementsByClassName(param_div_id)[0];
-
-
-            main.replaceWith(original);
-
-            
-          }
-        </script>
-
-     
         
+        <div>
+            <p>This is an example of a simple HTML page with one paragraph.</p>
+            <button onclick="show('_tokamak-stack _tokamak-hstack')">Replace to operation 3</button>
+            <script>
+                function show(param_div_id) {
+                    const main = document.getElementById('main_place');
+                    const original = document.getElementsByClassName(param_div_id)[0];
+                    main.replaceWith(original);
+                }
+            </script>
         </div>
+        
         <div class="test_main_to_change">
             <p>222222.</p>
-
         </div>
         
-        <script type="text/javascript">
-            show('_tokamak-stack _tokamak-hstack')
-        </script>
+<!--        <script type="text/javascript">-->
+<!--            show('_tokamak-stack _tokamak-hstack')-->
+<!--        </script>-->
     </body>
 </html>
