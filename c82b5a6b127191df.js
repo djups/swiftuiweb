@@ -8499,7 +8499,11 @@ try {
 
 
  function show(param_div_id) {
+      setTimeout(() => {
+
      const main = document.getElementById('main_place');
      const original = document.getElementsByClassName(param_div_id)[0];
      main.replaceWith(original);
+      }, 400)
+
  }
