@@ -5,6 +5,7 @@
         <meta name="description" content="Exploring swiftUI for web pages">
         <meta name="keywords" content="swiftUI, web, swiftUI web">
         <script type="module" src="c82b5a6b127191df.js"></script>
+<!--        <script type="module" src="custom.js"></script>-->
     </head>
     <body>
 
@@ -13,6 +14,19 @@
                 <p>main_place</p>
             </div>
         </div>
+        
+        <div>
+            <p>This is an example of a simple HTML page with one paragraph.</p>
+            <button onclick="show('_tokamak-stack _tokamak-hstack')">Replace to operation 3</button>
+            <script>
+                function show(param_div_id) {
+                    const main = document.getElementById('body_for_swiftUI');
+                    const original = document.getElementsByClassName(param_div_id)[0];
+                    main.replaceWith(original);
+                }
+            </script>
+        </div>
+        
         <div class="test_main_to_change">
             <p>222222.</p>
         </div>
