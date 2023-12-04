@@ -16,16 +16,14 @@
 
         <script>
           function show(param_div_id) {
-            document.getElementById('main_place').innerHTML = document.getElementById(param_div_id).innerHTML;
+            document.getElementById('main_place').innerHTML = document.getElementsByClassName(param_div_id)[0].innerHTML;
           }
         </script>
 
-        <div id="main_place2">
-            <p>main_place 2</p>
-        </div>
+     
         
         </div>
-        <div>
+        <div class="stack_tokamak-hstack">
             <p>222222.</p>
 
         </div>
