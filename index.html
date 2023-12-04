@@ -12,14 +12,17 @@
 
         <div>
         <p>This is an example of a simple HTML page with one paragraph.</p>
-        <button onclick="show('_tokamak-stack _tokamak-hstack')">Replace</button>
-        
+        <button onclick="show('_tokamak-stack _tokamak-hstack')">Replace to operation 3</button>
+
         <script>
           function show(param_div_id) {
-            document.getElementById('main_place').innerHTML = document.getElementsByClassName(param_div_id).innerHTML;
+            document.getElementById('main_place').innerHTML = document.getElementById(param_div_id).innerHTML;
           }
         </script>
 
+        <div id="main_place2">
+            <p>main_place 2</p>
+        </div>
         
         </div>
         <div>
