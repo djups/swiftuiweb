@@ -12,11 +12,19 @@
 
         <div>
         <p>This is an example of a simple HTML page with one paragraph.</p>
-        <button onclick="show('_tokamak-stack _tokamak-hstack')">Replace to operation 3</button>
+        <button onclick="show('stack_tokamak-hstack')">Replace to operation 3</button>
 
         <script>
           function show(param_div_id) {
-            document.getElementById('main_place').innerHTML = document.getElementsByClassName(param_div_id)[0].innerHTML;
+            
+            
+            const main = document.getElementById('main_place');
+            const original = document.getElementsByClassName(param_div_id)[0];
+
+
+            main.replaceWith(original);
+
+            
           }
         </script>
 
