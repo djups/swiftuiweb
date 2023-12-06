@@ -23,11 +23,10 @@ struct Counter: View {
     var body: some View {
         if count < limit {
             VStack {
-                HTML("div", ["id": "testClass"]) {
                     
                     Button("Increment") { count += 1 }
                     Text("\(count)")
-                }
+                
             }
             .onAppear { print("Counter.VStack onAppear") }
             .onDisappear { print("Counter.VStack onDisappear") }
