@@ -17,7 +17,7 @@ h1,h2,h3,
 h4,h5,h6 {
 	font-size: inherit;
 	line-height: inherit;
-	font-family: 'Josefin Sans', sans-serif;	
+	font-family: 'Josefin Sans', sans-serif;
 }
 h1,h2,h3,
 h4,h5,h6,p,ul,li,a,span {
@@ -33,7 +33,7 @@ a {
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	overflow: hidden;	
+	overflow: hidden;
 }
 .inside-container {
 	max-width: 940px;
@@ -64,8 +64,8 @@ a {
 }
 /*Banner*/
 .yoga-template .banner {
-	background-image: url(../img/yoga-header.jpg);
-	background-repeat: no-repeat; 
+	background-image: url(../img/background.jpeg);
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
@@ -83,12 +83,12 @@ a {
     z-index: 2;
 }
 .yoga-template .banner .top-bar{
-	padding:26px 15px; 
+	padding:26px 15px;
 	border-bottom: 1px solid #fff;
 }
 .yoga-template .banner .top-bar-left ,
 .top-bar-right {
-	padding-top: 24px;	
+	padding-top: 24px;
 	z-index: 3;
 }
 .yoga-template .banner .top-bar-left a {
@@ -233,11 +233,11 @@ a {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   display: inline-block;
-  margin-left: -1.3em; 
+  margin-left: -1.3em;
   width: 1.3em;
   font-size: 12px;
   line-height: 40px;
-  color: #7b6cd5; 
+  color: #7b6cd5;
 }
 .yoga-template .best-class-club .best-class-club-img {
 	background-image: url(../img/the-best-class-yoga.jpg);
@@ -274,7 +274,7 @@ a {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: 25px;
-	letter-spacing: 0.45px; 
+	letter-spacing: 0.45px;
 	color: #666;
 }
 .yoga-template .advantages-section .advantages-detail-img svg{
@@ -285,10 +285,10 @@ a {
 .yoga-template .advantages-section .advantages-detail-health,
 .yoga-template .advantages-section .advantages-detail-relax {
 	text-align: right;
-	width: 50%;	
+	width: 50%;
 }
 .yoga-template .advantages-section .advantages-detail-soul {
-	margin: 0 0 24px auto; 
+	margin: 0 0 24px auto;
 }
 .yoga-template .advantages-section .advantages-detail-health {
 	margin: 0 auto 24px;
@@ -296,7 +296,7 @@ a {
 .yoga-template .advantages-section .advantages-detail-energy,
 .yoga-template .advantages-section .advantages-detail-mind,
 .yoga-template .advantages-section .advantages-detail-meditat {
-	width: 50%;	
+	width: 50%;
 }
 .yoga-template .advantages-section .advantages-detail-energy {
 	margin-bottom: 24px;
@@ -305,7 +305,7 @@ a {
 	margin: 0 auto 24px;
 }
 .yoga-template .advantages-section .advantages-detail-meditat {
-	margin-left: auto; 
+	margin-left: auto;
 }
 /*Yoga Place*/
 .yoga-template .yogaPlace-section {
@@ -350,10 +350,10 @@ a {
 }
 /*Contact us*/
 .yoga-template .contact-section {
-	padding: 60px 15px; 
+	padding: 60px 15px;
 }
 .yoga-template .contact-section .appointment {
- 	border: 1px solid #666; 
+ 	border: 1px solid #666;
  	border-radius: 3px;
  	padding: 30px 28px 25px;
 }
@@ -377,7 +377,7 @@ a {
  .yoga-template .contact-section .appointment .appointment-form {
  	margin-top: 40px;
  }
-.yoga-template .contact-section .appointment 
+.yoga-template .contact-section .appointment
 .appointment-form  .appointment-form-input {
 	border: 1px solid #999;
 	height: 38px;
@@ -386,11 +386,11 @@ a {
 	line-height: 40px;
 	letter-spacing: 0.48px;
 }
-.yoga-template .contact-section .appointment 
+.yoga-template .contact-section .appointment
 .appointment-form  .data-input {
 	text-transform: uppercase;
 }
-.yoga-template .contact-section .appointment 
+.yoga-template .contact-section .appointment
 .appointment-form .appointment-form-text {
 	border: 1px solid #999;
 	margin-bottom: 20px;
@@ -398,7 +398,7 @@ a {
 	line-height: 40px;
 	letter-spacing: 0.48px;
 }
-.yoga-template .contact-section .appointment 
+.yoga-template .contact-section .appointment
 .appointment-form .box-select::before {
     content: "\f0dd";
     font-family: "Font Awesome 5 Free";
@@ -416,17 +416,17 @@ a {
     border-radius: 3px;
     transform: translate(-50%, -50%);
 }
-.yoga-template .contact-section .appointment 
+.yoga-template .contact-section .appointment
 .appointment-form .appointment-form-col-left {
 	padding-right: 7px;
 }
-.yoga-template .contact-section .appointment 
+.yoga-template .contact-section .appointment
 .appointment-form .appointment-form-col-right {
 	padding-left: 7px;
     padding-right: 7px;
 }
 
-.yoga-template .contact-section .appointment 
+.yoga-template .contact-section .appointment
 .appointment-form .appointment-form-btn {
 	width: 100%;
     padding: 18px 0 13px;
@@ -491,7 +491,7 @@ a {
     margin: 0 auto 12px;
     overflow: hidden;
     border: unset;
-} 
+}
 .yoga-template .trainer-section .trainer-img .trainer-in-img {
 	max-width: 182px;
 	border-radius: 50%;
@@ -532,7 +532,7 @@ a {
 	letter-spacing: 0.6px;
 	font-weight: 700;
 	color:#fff;
-	text-transform:uppercase; 
+	text-transform:uppercase;
 	background-color: #7b6cd5;
 	border: 1px solid #7b6cd5;
 	border-radius: 3px;
