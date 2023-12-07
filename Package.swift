@@ -5,7 +5,6 @@
 // Do not edit it by hand because the contents will be replaced.
 
 import PackageDescription
-import AppleProductTypes
 
 let package = Package(
     name: "swiftuiweb",
@@ -29,9 +28,7 @@ let package = Package(
                 "swiftuiwebLibrary",
                 .product(name: "TokamakShim", package: "Tokamak")
             ],
-            resources: [
-                .process("Resources")
-            ]
+            resources: [.copy("visa.png"), .copy("20dollars.jpeg")]
         ),
         .target(
             name: "swiftuiwebLibrary"

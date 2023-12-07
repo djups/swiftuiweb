@@ -5,7 +5,8 @@
 //  Created by Alexei Jovmir on 6/12/23.
 //
 
-import SwiftUI
+import TokamakShim
+import Foundation
 
 struct ContentView: View {
     @ObservedObject var viewModel: ViewModel
@@ -13,9 +14,9 @@ struct ContentView: View {
     var body: some View {
         HStack {
             VStack {
+                Text("centimeter to inches")
                 TextField("0.0", text: $viewModel.stringValueInput)
-                    .fixedSize()
-                    .keyboardType(.decimalPad)
+//                    .fixedSize()
                 Button {
                     viewModel.convert()
                 } label: {
@@ -31,12 +32,17 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
 //                    .foregroundStyle(.tint)
-                    .padding()
+                    .frame(width: 133, height: 100)
                 Slider(
                     value: $viewModel.sliderValue,
                     in: 0...100
-                ).allowsHitTesting(false)
-                    .padding()
+                )
+
+//                .allowsHitTesting(false)
+                .frame(width: 133)
+                if !viewModel.stringValueInput.isEmpty {
+                    Text("\(viewModel.stringValueInput)cm relative to image above")
+                }
 
             }.padding()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -62,24 +68,24 @@ public class ViewModel: ObservableObject {
     @Published var stringValueResult: String = ""
     @Published var stringValueInput: String = ""
     @Published var sliderValue: Double = 50.0
-    @Published var imageName: String = "20dollars"
+    @Published var imageName: String = "20dollars.jpeg"
 
     enum ConversionType {
-        case metersToFeet
+        case cmToInches
         case feetToMeters
     }
     
     public func convert() {
         if let double = Double(stringValueInput) {
-            let feet = convert(length: double, type: .metersToFeet)
-            stringValueResult = String(feet)
+            let feet = convert(length: double, type: .cmToInches)
+            stringValueResult = String(feet) + " feet"
             
-            if double > 0, double <= 4 {
-                imageName = "visa"
-                sliderValue = calculatePercentage(input: double, minValue: 0, maxValue: 4) ?? 0.0
-            } else if double > 4, double < 10 {
-                imageName = "20dollars"
-                sliderValue = calculatePercentage(input: double, minValue: 4, maxValue: 10) ?? 0.0
+            if double > 0, double <= 8.56 {
+                imageName = "visa.png"
+                sliderValue = calculatePercentage(input: double, minValue: 0, maxValue: 8.56) ?? 0.0
+            } else if double > 8.56, double < 15.6 {
+                imageName = "20dollars.jpeg"
+                sliderValue = calculatePercentage(input: double, minValue: 8.56, maxValue: 15.6) ?? 0.0
             }
         }
       
@@ -87,8 +93,8 @@ public class ViewModel: ObservableObject {
 
    private func convert(length: Double, type: ConversionType) -> Double {
         switch type {
-        case .metersToFeet:
-            return length * 3.28084
+        case .cmToInches:
+            return length * 0.393701
         case .feetToMeters:
             return length / 3.28084
         }

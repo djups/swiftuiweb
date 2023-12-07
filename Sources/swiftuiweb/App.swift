@@ -7,10 +7,10 @@ struct TokamakApp: App {
     var body: some Scene {
         WindowGroup("Tokamak App") {
             HStack {
-                MouseEventsView()
-                    .padding()
-                Counter(count: 1, limit: 10)
-                
+//                MouseEventsView()
+//                    .padding()
+//                Counter(count: 1, limit: 10)
+                ContentView(viewModel: ViewModel())
             }
         }
     }
